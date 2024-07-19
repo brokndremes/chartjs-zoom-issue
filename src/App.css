@@ -1,0 +1,183 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.chart-container {
+  position: relative;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+.scatterlayer .trace:last-child path {
+  pointer-events: all;
+}
+
+.background {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  flex: 1 1 auto;
+  background-color: #d08c8c;
+  margin: 0;
+}
+
+.left-bar {
+  background-color: darkcyan;
+  margin: 0;
+  height: 100%;
+  width: 100px;
+  float: left
+}
+
+.left-bar-list {
+  margin: 50px;
+}
+
+.content {
+  height: 100%;
+  margin: 0;
+  background-color: green;
+  float: left
+}
+
+.tall-test {
+  background-color: teal;
+  height: 5000px;
+}
+
+.plot-parent {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: left;
+}
+
+.plot-controls {
+  display: inline-block;
+  padding: 1px 10px;
+  vertical-align: middle;
+  color: white;
+}
+
+.plot-plot {
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  color: gray;
+}
+
+.plot-control-button {
+  margin-bottom: 5px;
+  width: 160px;
+  display: block;
+}
+
+
+.header-project-files {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header-project-files-button {
+  /*flex: 1;*/
+  /*display: flex;*/
+  align-items: center;
+  /*padding: 0 0 0 16px;*/
+  margin-left: 16px;
+}
+
+.header-active-project {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.array-selection-button-group{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 5px 5px;
+  padding: 0;
+}
+
+.array-selection-button{
+  text-align: center;
+  margin: 0;
+  width: 100px;
+}
+
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+
+.box .row.header {
+  flex: 0 1 auto;
+  background-color: deepskyblue;
+  display: flex;
+}
+
+.box .row.selection {
+  flex: 0 1 auto;
+  background-color: deepskyblue;
+  display: flex;
+  align-items: center;
+}
+
+.box .row.content {
+  flex: 1 1 auto;
+}
+
